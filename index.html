@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,15 +20,18 @@
             padding: 20px 10px;
             text-align: center;
         }
+
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
+
         h2 {
             font-size: 2rem;
             margin-top: 20px;
             color: #4CAF50;
         }
+
         p {
             font-size: 1.2rem;
             margin: 10px 20px;
@@ -41,6 +45,20 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .code-container {
+            background: #f4f4f4;
+            border-left: 4px solid #4CAF50;
+            padding: 10px;
+            margin: 20px 20px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+
+        pre {
+            margin: 0;
         }
     </style>
 </head>
@@ -58,6 +76,33 @@
         <p>
             In this guide, we will explore how Python can simplify complex economic analyses, making it easier to 
             visualize data, model economic scenarios, and derive insights that drive informed decision-making.
+        </p>
+        <h2>Descriptive Statistics Simulation</h2>
+        <p>
+            Below is an example of Python code for performing descriptive statistics on a dataset. This code calculates 
+            key metrics like mean, median, and standard deviation:
+        </p>
+        <div class="code-container">
+            <pre>
+import pandas as pd
+
+# Sample data
+data = {
+    "Revenue": [500, 700, 800, 600, 1000],
+    "Costs": [300, 400, 500, 350, 600]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Calculate descriptive statistics
+summary = df.describe()
+print(summary)
+            </pre>
+        </div>
+        <p>
+            Copy and run this code in a Python environment to see the descriptive statistics summary for the given dataset.
+            You can replace the sample data with your own economic data to perform similar analyses.
         </p>
     </div>
 </body>
